@@ -2,7 +2,7 @@
   <div class="inner">
     <div class="user__wrapper">
       <h2 class="page-heading">
-        <%= "#{@user.name} さんの情報" %>
+        <%= "#{@user.name}さんの情報"%>
       </h2>
       <table class="table">
         <tbody>
@@ -16,7 +16,7 @@
           </tr>
           <tr>
             <th class="table__col1">所属</th>
-            <td class="table__col2"><%= @user.affiliation %></td>
+            <td class="table__col2"><%= @user.occupation %></td>
           </tr>
           <tr>
             <th class="table__col1">役職</th>
@@ -25,7 +25,7 @@
         </tbody>
       </table>
       <h2 class="page-heading">
-        <%= "#{@user.name} さんのプロトタイプ" %>
+        <%= "#{@user.name}さんのプロトタイプ"%>
       </h2>
      <div class="user__card">
   <%= render partial: 'prototypes/prototype', collection: @user.prototypes %>
